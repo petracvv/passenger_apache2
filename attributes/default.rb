@@ -12,4 +12,5 @@ default['passenger']['package']['version'] = nil
 default['passenger']['ruby_bin'] = languages['ruby']['ruby_bin']
 default['passenger']['gem_bin'] = languages['ruby']['gem_bin']
 default['passenger']['install_module'] = true
-default['passenger']['passenger_user'] = 'www-data'
+default['passenger']['user'] = 'www-data'
+default['passenger']['group'] = 'www-data'
