@@ -54,4 +54,5 @@ execute 'passenger_module' do
   # this is late eval'd when Chef converges this resource, and the
   # attribute may have been modified by the `mod_rails` recipe.
   not_if { ::File.exist?(node['passenger']['module_path']) }
+  user node['passenger']['user']
 end
